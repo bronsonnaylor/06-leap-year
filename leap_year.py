@@ -7,15 +7,3 @@
 def is_leap(year):
     bool = year % 4 == 0 and year % 100 != 0 or year % 400 == 0
     return bool
-
-from test import testEqual
-
-testEqual(is_leap(1944), True)
-testEqual(is_leap(2011), False)
-testEqual(is_leap(1986), False)
-testEqual(is_leap(1956), True)
-testEqual(is_leap(1957), False)
-testEqual(is_leap(1800), False)
-testEqual(is_leap(1900), False)
-testEqual(is_leap(1600), True)
-testEqual(is_leap(2056), True)
